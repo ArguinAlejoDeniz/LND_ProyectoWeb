@@ -9,11 +9,7 @@ border: solid 1px black;
 border-radius: 300px;
 width: 200px;
 height: 50px;
-
-}
-
-nav li{
-
+background-color: rgb(255, 248, 234);
 }
 
 ul{
@@ -39,8 +35,10 @@ nav div{
 }
 
 .introducción{
-    margin-left: 35%;
-    margin-right: 25%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .Logo{
@@ -51,4 +49,24 @@ nav div{
 footer{
 
     background-color: rgb(2, 2, 139);
+}
+
+.video{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#Nombre{
+    color: white;
+    text-shadow: 2px 2px 4px rgb(5, 5, 5);
+    font-size: 45px;
+}
+#Eslogan{
+    color: white;
+    text-shadow: 2px 2px 4px rgb(5, 5, 5); 
+    font-size: 35px;   
 }
