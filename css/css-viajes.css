@@ -1,18 +1,18 @@
-.{
-
-}
-/*  */
 nav{
      display: block;
      display:flex;
      justify-content: center;
 }
 
-nav >  li, div{
+nav  li, nav > div{
 border: solid 1px black;
 border-radius: 300px;
 width: 200px;
 height: 50px;
+
+}
+
+nav li{
 
 }
 
@@ -36,4 +36,19 @@ ul{
 
 nav div{
     margin-left: auto;
+}
+
+.introducción{
+    margin-left: 35%;
+    margin-right: 25%;
+}
+
+.Logo{
+    width: 200px;
+    height: 200px;
+}
+
+footer{
+
+    background-color: rgb(2, 2, 139);
 }
