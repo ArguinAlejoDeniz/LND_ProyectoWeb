@@ -87,6 +87,17 @@ nav div{
     margin: 20px 0;
 }
 
+#Nombre{
+    color: white;
+    text-shadow: 2px 2px 4px rgb(5, 5, 5);
+    font-size: 2.5rem;
+}
+#Eslogan{
+    color: white;
+    text-shadow: 2px 2px 4px rgb(5, 5, 5); 
+    font-size: 2rem;  
+}
+
 footer{
     font-size: 15px;
     background-color: rgba(2, 2, 139, 0.9);
@@ -120,17 +131,6 @@ footer div{
     object-fit: cover;
 }
 
-#Nombre{
-    color: white;
-    text-shadow: 2px 2px 4px rgb(5, 5, 5);
-    font-size: 2.5rem;
-}
-#Eslogan{
-    color: white;
-    text-shadow: 2px 2px 4px rgb(5, 5, 5); 
-    font-size: 2rem;  
-}
-
 .botonPrincipal button{
     padding: 16px, 32px;
     background-color: aliceblue;
@@ -151,6 +151,7 @@ footer div{
     border-radius: 300px;
     width: 100%;
     justify-content: center;
+    padding: 3%;
 }
 
 @media screen and (max-width: 768px) {
