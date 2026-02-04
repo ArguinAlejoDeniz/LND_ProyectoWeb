@@ -20,12 +20,12 @@ header{
     position: relative;
 }
 nav{
-     display: block;
-     display:flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 1rem 2rem;
-     width: 100%;
+    display: block;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
 }
 
 nav  li, nav > div{
@@ -107,14 +107,31 @@ nav div{
 }
 
 #viajesI{
-    padding: 20rem 2rem;
+    padding: 10rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20rem;
+
+}
+
+#viajesII{
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenerdorSec1{
+    display: flex;
+    flex-direction: row;
 }
 
 .Card1 h3{
     font-size: large;
 }
 
-.Card1{
+.Card{
     background-color: rgb(255, 206, 174);
     border: solid 1px #ccc;
     border-radius: 30px;
@@ -128,16 +145,17 @@ nav div{
     margin-top: 40px;
     overflow: hidden;
     box-shadow: 0 0.4rem 0.6rem black;
+    margin-inline: 30px;
 }
 
-.Card1 img{
+.Card img{
     width: 13vw;
     height: 17vh;
     border: solid 1px black;
     border-radius: 20px;
 }
 
-.Card1 button{
+.Card button{
     background-color:  rgb(40, 21, 207);
     color: white;
     border: solid 1px black;
@@ -146,7 +164,7 @@ nav div{
     border-radius: 300px;
 }
 
-.Card1 button:hover{
+.Card button:hover{
     background-color: rgb(92, 21, 207);
     cursor: pointer;
     border: solid 2px white;
@@ -222,8 +240,8 @@ footer div{
 
 .galeria-grid {
     display: grid;
-    gap: 1.5rem; 
-    width: 90%; 
+    gap: 2rem; 
+    width: 70vw; 
     margin: 0 auto;
 }
 
@@ -250,15 +268,25 @@ footer div{
 
 @media screen and (max-width: 1280px) {
     #viajesI{
-        padding: 20rem 2rem;
+        padding: 10rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
     }
 
-    .Card1 h3{
+    #viajesII{
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .Card h3{
         font-size: large;
         flex-wrap: wrap;
     }
 
-    .Card1{
+    .Card{
         background-color: rgb(255, 206, 174);
         border: solid 1px #ccc;
         border-radius: 1rem;
@@ -273,14 +301,14 @@ footer div{
         box-shadow: 0 0.4rem 0.6rem black;
     }
 
-    .Card1 img{
+    .Card img{
         width: 15vw;
         height: 10vh;
         border: solid 1px black;
         border-radius: 20px;
     }
 
-    .Card1 button{
+    .Card button{
         background-color:  rgb(40, 21, 207);
         color: white;
         border: solid 1px black;
@@ -290,7 +318,8 @@ footer div{
     }
 
     .galeria-grid {
-        grid-template-columns: 19% 19% 19% 19% 19%; 
+        grid-template-columns: 19% 19% 19% 19% 19%;
+        margin-left: 5%;
     }
 
     .galeria-card img {
@@ -365,7 +394,8 @@ footer div{
     }
 
     .galeria-grid {
-        width: 95vw; 
+        width: 95vw;
+        grid-template-columns: 28% 28% 28%; 
     }
     
     .galeria-card img {
