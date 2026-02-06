@@ -20,6 +20,7 @@ header{
     position: relative;
 }
 nav{
+<<<<<<< HEAD
      display: block;
      display:flex;
      justify-content: space-between;
@@ -32,6 +33,14 @@ nav{
      align-items: center;
      padding: 1rem 2rem;
      width: 100%;
+=======
+    display: block;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+>>>>>>> 3d007f4a070741e2061d00d5405e072dab4f4536
 }
 
 nav  li, nav > div{
@@ -124,11 +133,44 @@ nav div{
     font-size: 2rem;  
 }
 
+<<<<<<< HEAD
 #viajesI, #viajesII{
     padding: 4rem 2rem;
+=======
+#viajesI{
+    padding: 10rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20rem;
+
+}
+
+#viajesII{
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenerdorSec1{
+    display: flex;
+    flex-direction: row;
+}
+
+.Card1 h3{
+    font-size: large;
+}
+
+.Card{
+    background-color: rgb(255, 206, 174);
+    border: solid 1px #ccc;
+    border-radius: 30px;
+>>>>>>> 3d007f4a070741e2061d00d5405e072dab4f4536
     display: flex;
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
     width: 100%;
     margin-top: 15rem;
 }
@@ -194,6 +236,23 @@ nav div{
 
 .Card button {
     background-color: rgb(40, 21, 207);
+=======
+    margin-top: 40px;
+    overflow: hidden;
+    box-shadow: 0 0.4rem 0.6rem black;
+    margin-inline: 30px;
+}
+
+.Card img{
+    width: 13vw;
+    height: 17vh;
+    border: solid 1px black;
+    border-radius: 20px;
+}
+
+.Card button{
+    background-color:  rgb(40, 21, 207);
+>>>>>>> 3d007f4a070741e2061d00d5405e072dab4f4536
     color: white;
     border: none;
     padding: 10px 20px;
@@ -205,6 +264,7 @@ nav div{
     height: auto;
 }
 
+<<<<<<< HEAD
 
 .Card button:hover {
     background-color: rgb(26, 12, 138);
@@ -266,6 +326,12 @@ tbody tr:hover, tr:not(:first-child):hover {
 
 tr:last-of-type {
     border-bottom: 2px solid rgb(40, 21, 207);
+=======
+.Card button:hover{
+    background-color: rgb(92, 21, 207);
+    cursor: pointer;
+    border: solid 2px white;
+>>>>>>> 3d007f4a070741e2061d00d5405e072dab4f4536
 }
 
 footer{
@@ -338,8 +404,11 @@ footer div{
 
 .galeria-grid {
     display: grid;
+<<<<<<< HEAD
     gap: 1.5rem; 
     width: 90%; 
+=======
+>>>>>>> 3d007f4a070741e2061d00d5405e072dab4f4536
     gap: 2rem; 
     width: 70vw; 
     margin: 0 auto;
@@ -366,6 +435,7 @@ footer div{
     transform: scale(1.1);
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 1280px){
     #viajesI, #viajesII {
         padding: 4rem 1rem;
@@ -376,12 +446,29 @@ footer div{
         justify-content: center;
         gap: 20px;
     }
+=======
+@media screen and (max-width: 1280px) {
+    #viajesI{
+        padding: 10rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
+    }
+
+    #viajesII{
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+>>>>>>> 3d007f4a070741e2061d00d5405e072dab4f4536
 
     .Card h3{
         font-size: large;
         flex-wrap: wrap;
     }
 
+<<<<<<< HEAD
     .Card {
         width: 300px; 
         height: auto; 
@@ -393,6 +480,28 @@ footer div{
         width: 100%;
         height: 200px;
         object-fit: cover;
+=======
+    .Card{
+        background-color: rgb(255, 206, 174);
+        border: solid 1px #ccc;
+        border-radius: 1rem;
+        display: flex;
+        width: 20vw;
+        height: 20vh;
+        padding: 5px 20px;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        overflow: hidden;
+        box-shadow: 0 0.4rem 0.6rem black;
+    }
+
+    .Card img{
+        width: 15vw;
+        height: 10vh;
+        border: solid 1px black;
+        border-radius: 20px;
+>>>>>>> 3d007f4a070741e2061d00d5405e072dab4f4536
     }
 
     .Card button{
@@ -405,9 +514,14 @@ footer div{
     }
 
     .galeria-grid {
+<<<<<<< HEAD
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         width: 90vw;
         margin: 0 auto;
+=======
+        grid-template-columns: 19% 19% 19% 19% 19%;
+        margin-left: 5%;
+>>>>>>> 3d007f4a070741e2061d00d5405e072dab4f4536
     }
 
     .galeria-card img {
@@ -478,9 +592,14 @@ footer div{
     }
 
     .galeria-grid {
+<<<<<<< HEAD
         grid-template-columns: repeat(2, 1fr);
         width: 95vw;
         gap: 10px;
+=======
+        width: 95vw;
+        grid-template-columns: 28% 28% 28%; 
+>>>>>>> 3d007f4a070741e2061d00d5405e072dab4f4536
     }
 
     .galeria-card img {
