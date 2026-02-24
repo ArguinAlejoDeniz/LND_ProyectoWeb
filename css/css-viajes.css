@@ -26,18 +26,6 @@ nav{
      align-items: center;
      padding: 1rem 2rem;
      width: 100%;
-     display: block;
-     display:flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 1rem 2rem;
-     width: 100%;
-    display: block;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    width: 100%;
 }
 
 nav  li, nav > div{
@@ -135,11 +123,11 @@ nav div{
 }
 
 #viajesI{
-    padding: 10rem 2rem;
+    padding: 5rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 20rem;
+    margin-top: 10rem;
 
 }
 
@@ -148,26 +136,11 @@ nav div{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.contenerdorSec1{
-    display: flex;
-    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .Card1 h3{
     font-size: large;
-}
-
-.Card{
-    background-color: rgb(255, 206, 174);
-    border: solid 1px #ccc;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 15rem;
 }
 
 #viajesI h1, #viajesII h1 {
@@ -181,7 +154,6 @@ nav div{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 2rem;
     width: 100%;
     max-width: 1200px;
@@ -199,7 +171,7 @@ nav div{
     background-color: rgb(255, 248, 234);
     border: 1px solid #ddd;
     border-radius: 15px;
-    width: 300px; 
+    width: 25%; 
     min-height: 400px;
     display: flex;
     flex-direction: column;
@@ -208,6 +180,8 @@ nav div{
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 0.4rem 0.6rem black;
 }
 
 .Card:hover {
@@ -234,8 +208,8 @@ nav div{
 }
 
 .Card img{
-    width: 13vw;
-    height: 17vh;
+    width: 95%;
+    height: 60%;
     border: solid 1px black;
     border-radius: 20px;
 }
@@ -330,7 +304,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
 
 footer div{
@@ -346,7 +320,7 @@ footer div{
 }
 
 .video{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: absolute;
     top: 0;
@@ -362,6 +336,12 @@ footer div{
     width: 15vw;
     height: 5vh;
     cursor: pointer;
+}
+
+.botonPrincipal button a{
+    text-decoration: none;
+    color: inherit;
+    font-size: large;
 }
 
 .botonPrincipal button:hover{
@@ -391,12 +371,14 @@ footer div{
 }
 
 .galeria-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     display: grid;
     gap: 1.5rem; 
     width: 90%; 
     gap: 2rem; 
     width: 70vw; 
     margin: 0 auto;
+    grid-template-columns: 19% 19%;
 }
 
 .galeria-card {
@@ -420,6 +402,11 @@ footer div{
     transform: scale(1.1);
 }
 
+#rss{
+    display: flex;
+    width: 50%;
+}
+
 @media screen and (max-width: 1280px) {
 
     #viajesI, #viajesII {
@@ -429,14 +416,17 @@ footer div{
     .contenerdorSec1 {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
+        gap: 50px;
+        max-width: 720px;
+        justify-content: center;
     }
 
     #viajesI{
         padding: 10rem 2rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between
+        justify-content: space-between;
+        
     }
 
     #viajesII{
@@ -453,7 +443,7 @@ footer div{
 
     .Card {
         width: 300px; 
-        height: auto; 
+        height: 350px; 
         min-height: 400px;
         margin: 0;
     }
@@ -464,35 +454,12 @@ footer div{
         object-fit: cover;
     }
 
-    .Card{
-        background-color: rgb(255, 248, 234);
-        border: solid 1px #ccc;
-        border-radius: 1rem;
-        display: flex;
-        width: 20vw;
-        height: 10vh;
-        padding: 5px 20px;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        overflow: hidden;
-        box-shadow: 0 0.4rem 0.6rem black;
-    }
-
-    .Card img{
-        width: 15vw;
-        height: 10vh;
-        border: solid 1px black;
-        border-radius: 20px;
-
-    }
-
     .Card button{
         background-color:  rgb(40, 21, 207);
         color: white;
         border: solid 1px black;
-        width: 15vw;
-        height: 3vh;
+        width: 65%;
+        height: 10%;
         border-radius: 300px;
         
     }
@@ -501,7 +468,7 @@ footer div{
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         width: 90vw;
         margin: 0 auto;
-        grid-template-columns: 19% 19% 19% 19% 19%;
+        grid-template-columns: 19% 19%;
         margin-left: 5%;
     }
 
@@ -523,6 +490,10 @@ footer div{
 
     nav li {
         width: 100%;
+    }
+
+    .botonPrincipal button{
+
     }
 
     .contenedor {
