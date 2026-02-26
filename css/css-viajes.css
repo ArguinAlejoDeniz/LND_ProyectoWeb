@@ -19,13 +19,14 @@ header{
     flex-direction: column;
     position: relative;
 }
+
 nav{
-     display: block;
-     display:flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 1rem 2rem;
-     width: 100%;
+    display: block;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
 }
 
 nav  li, nav > div{
@@ -60,8 +61,6 @@ ul{
     flex-wrap: wrap;
     justify-content: center;
 }
-
-
 
 .contenedor{
     display:flex;
@@ -112,6 +111,7 @@ nav div{
     text-shadow: 2px 2px 4px rgb(5, 5, 5);
     font-size: 2.5rem;
 }
+
 #Eslogan{
     color: white;
     text-shadow: 2px 2px 4px rgb(5, 5, 5); 
@@ -120,6 +120,7 @@ nav div{
 
 #viajesI, #viajesII{
     padding: 4rem 2rem;
+    align-items: center;
 }
 
 #viajesI{
@@ -128,7 +129,6 @@ nav div{
     flex-direction: column;
     justify-content: space-between;
     margin-top: 10rem;
-
 }
 
 #viajesII{
@@ -402,6 +402,18 @@ footer div{
     transform: scale(1.1);
 }
 
+.mainGaImage{
+    display: flex;
+    justify-content: right;
+    width: 25%;
+    height: auto;
+}
+
+.mainGaImage img{
+    width: 300px;
+    height: auto;
+}
+
 #rss{
     display: flex;
     width: 50%;
@@ -418,7 +430,7 @@ footer div{
         justify-content: center;
         gap: 50px;
         max-width: 720px;
-        justify-content: center;
+        align-items: center;
     }
 
     #viajesI{
@@ -430,7 +442,7 @@ footer div{
     }
 
     #viajesII{
-        padding: 5rem 2rem;
+        padding: 10rem 2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
