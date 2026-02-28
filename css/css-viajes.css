@@ -29,6 +29,11 @@ nav{
     width: 100%;
 }
 
+.pildora{
+    text-decoration: none;
+    color: inherit;
+}
+
 nav  li, nav > div{
     border: solid 1px black;
     border-radius: 300px;
@@ -371,14 +376,37 @@ footer div{
 }
 
 .galeria-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     display: grid;
-    gap: 1.5rem; 
-    width: 90%; 
-    gap: 2rem; 
-    width: 70vw; 
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    width: 60%;
+    margin: 0; 
+}
+
+.galeria-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
-    grid-template-columns: 19% 19%;
+    gap: 2rem;
+}
+
+.mainGaImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+}
+
+.mainGaImage img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
 }
 
 .galeria-card {
@@ -402,21 +430,12 @@ footer div{
     transform: scale(1.1);
 }
 
-.mainGaImage{
+.contenedor-rss {
     display: flex;
-    justify-content: right;
-    width: 25%;
-    height: auto;
-}
-
-.mainGaImage img{
-    width: 300px;
-    height: auto;
-}
-
-#rss{
-    display: flex;
-    width: 50%;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 3rem 0;
 }
 
 @media screen and (max-width: 1280px) {
@@ -504,10 +523,6 @@ footer div{
         width: 100%;
     }
 
-    .botonPrincipal button{
-
-    }
-
     .contenedor {
         width: 100%;
         justify-content: space-between;
@@ -573,4 +588,10 @@ footer div{
         gap: 20px;
         text-align: center;
     }
+
+    .contenedor-rss {
+        width: 90%;
+        padding: 2rem 0;
+    }
+
 }

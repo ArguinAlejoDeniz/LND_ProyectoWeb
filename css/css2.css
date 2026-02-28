@@ -1,0 +1,102 @@
+    body {
+        background-color: antiquewhite;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    .contenedor-formulario {
+        background-color: rgba(255, 248, 234, 0.9);
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        width: 100%;
+        max-width: 500px;
+    }
+
+    h1 {
+        color: rgb(2, 2, 139);
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .grupo-campo {
+        margin-bottom: 1.5rem;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    input[type="text"], input[type="date"], select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .destinos-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .destinos-grid label {
+        font-weight: normal;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .consentimiento {
+        font-weight: normal;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+
+    button {
+        background-color: rgb(40, 21, 207);
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 50px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    button:hover {
+        background-color: rgb(26, 12, 138);
+    }
+
+    .pildora-volver {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: inherit;
+    border: solid 1px black;
+    border-radius: 300px;
+    padding: 10px 20px;
+    background-color: rgba(255, 248, 234, 0.9);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+    .pildora-volver:hover {
+        background-color: rgba(253, 235, 198, 0.9);
+    }

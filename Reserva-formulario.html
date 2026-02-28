@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Viaje - Agencias Titán</title>
+    <link rel="stylesheet" href="css/css2.css">
+    <link rel="icon" type="img-vid" href="img-vid/Logo.png">
+</head>
+<body>
+    <a href="Viajes.html" class="pildora-volver">⬅ Volver a Inicio</a>
+    <div class="contenedor-formulario">
+        <h1>Reserva tu Viaje</h1>
+        
+        <form action="#" method="POST">
+            <div class="grupo-campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="continente">¿A qué continente quieres ir?</label>
+                <select id="continente" name="continente" required>
+                    <option value="">Selecciona un continente...</option>
+                    <option value="europa">Europa</option>
+                    <option value="america">América</option>
+                    <option value="asia">Asia</option>
+                    <option value="africa">África</option>
+                    <option value="oceania">Oceanía</option>
+                </select>
+            </div>
+
+            <div class="grupo-campo">
+                <label>Elige tu destino exacto:</label>
+                <div class="destinos-grid">
+                    <label><input type="radio" name="destino" value="roma" required> Roma</label>
+                    <label><input type="radio" name="destino" value="madrid"> Madrid</label>
+                    <label><input type="radio" name="destino" value="japon"> Japón</label>
+                    <label><input type="radio" name="destino" value="maldivas"> Las Maldivas</label>
+                    <label><input type="radio" name="destino" value="francia"> Francia</label>
+                    <label><input type="radio" name="destino" value="lanzarote"> Lanzarote</label>
+                    <label><input type="radio" name="destino" value="barcelona"> Barcelona</label>
+                </div>
+            </div>
+
+            <div class="grupo-campo">
+                <label class="consentimiento">
+                    <input type="checkbox" name="consentimiento" required> 
+                    Acepto la política de privacidad y doy mi consentimiento.
+                </label>
+            </div>
+
+            <button type="submit">Enviar solicitud</button>
+        </form>
+    </div>
+
+</body>
+</html>
