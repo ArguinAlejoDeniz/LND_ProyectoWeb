@@ -18,7 +18,7 @@
                     <li class="pildora"><a href="#galeria">Galeria</a></li>
                 </ul>
                 <div class="contenedor">
-                    <button class="pildora"><a href="Reserva-formulario.html" href="css/css2.css">☰</a></button>
+                    <button class="pildora" onclick="toggleMenu()">☰</button>
                     <img src="img-vid/profile.png" alt="Imagen de usuario">
                 </div>
             </nav>
@@ -30,6 +30,13 @@
         </div>
         <div class="botonPrincipal">
             <button><a href="#viajesI">viajes</a></button>
+        </div>
+        <div id="menuLateral" class="menu-lateral">
+            <button class="cerrar-menu" onclick="toggleMenu()">×</button>
+            <h2>Opciones</h2>
+            <ul>
+                <li><a href="Reserva-formulario.html">Reservar un viaje</a></li>
+            </ul>
         </div>
     </header>
     <main>
@@ -178,4 +185,10 @@
             <img src="img-vid/twitter.jpg" alt="twitter" class="redes">
         </div>
     </footer>
+    <script>
+    function toggleMenu() {
+        var menu = document.getElementById("menuLateral");
+        menu.classList.toggle("abierto");
+    }
+</script>
 </body>

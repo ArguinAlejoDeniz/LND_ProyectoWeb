@@ -43,6 +43,86 @@ nav  li, nav > div{
     cursor: pointer;
 }
 
+nav button a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(2, 2, 139, 0.95);
+    color: white;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+    transition: right 0.4s ease;
+    z-index: 2000; 
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-lateral.abierto {
+    right: 0; 
+}
+
+.menu-lateral h2 {
+    margin-top: 2rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.menu-lateral ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.menu-lateral li {
+    border: none;
+    background: transparent;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.menu-lateral a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.menu-lateral a:hover {
+    color: rgb(253, 235, 198);
+    background-color: transparent;
+}
+
+.cerrar-menu {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.cerrar-menu:hover {
+    transform: scale(1.2);
+}
+
 nav li a {
     text-decoration: none;
     color: inherit;
@@ -495,16 +575,23 @@ footer div{
         
     }
 
-    .galeria-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        width: 90vw;
-        margin: 0 auto;
-        grid-template-columns: 19% 19%;
-        margin-left: 5%;
+    .galeria-img {
+        flex-direction: column;
+        gap: 2rem;
     }
 
+    .mainGaImage {
+        width: 80%;
+    }
+
+    .galeria-grid {
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        margin: 0;
+    }
+    
     .galeria-card img {
-        height: 25vh; 
+        height: 150px;
     }
 }
 
@@ -570,17 +657,21 @@ footer div{
         padding: 12px;
     }
 
-    .galeria-grid {
+    .galeria-img {
+        width: 95%;
+    }
 
+    .mainGaImage {
+        width: 100%;
+    }
+
+    .galeria-grid {
         grid-template-columns: repeat(2, 1fr);
-        width: 95vw;
         gap: 10px;
-        width: 95vw;
-        grid-template-columns: 28% 28% 28%; 
     }
 
     .galeria-card img {
-        height: 30vh; 
+        height: 120px;
     }
 
     footer {
