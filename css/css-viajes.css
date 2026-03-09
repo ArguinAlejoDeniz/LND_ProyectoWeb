@@ -252,26 +252,66 @@ nav div{
 }
 
 
+
 .Card {
-    background-color: rgb(255, 248, 234);
-    border: 1px solid #ddd;
-    border-radius: 15px;
     width: 25%; 
     min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    perspective: 1000px;
+    background-color: transparent;
     transition: transform 0.3s ease;
-    overflow: hidden;
-    box-shadow: 0 0.4rem 0.6rem black;
 }
 
 .Card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+.Card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+.Card.flipped .Card-inner {
+    transform: rotateY(180deg);
+}
+
+
+.Card-front, .Card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    background-color: rgb(255, 248, 234);
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1), 0 0.4rem 0.6rem black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+
+.Card-front {
+    justify-content: space-between;
+}
+
+
+.Card-back {
+    transform: rotateY(180deg);
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.Card-back p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #333;
 }
 
 .Card img {
